@@ -4,7 +4,7 @@ RUN apt-get update && \
     apt-get install -y \
             cmake-curses-gui \
             clinfo
-RUN wget http://us.download.nvidia.com/XFree86/Linux-x86_64/346.46/NVIDIA-Linux-x86_64-346.46.run
+RUN wget http://us.download.nvidia.com/XFree86/Linux-x86_64/346.96/NVIDIA-Linux-x86_64-346.96.run
 RUN chmod +x NVIDIA-Linux-x86_64-*.run 
 RUN ./NVIDIA-Linux-x86_64-*.run -s --no-kernel-module
 RUN cd ~ && mkdir git && cd git && git clone --recursive https://github.com/hughperkins/EasyCL.git
